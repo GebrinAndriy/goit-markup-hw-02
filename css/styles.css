@@ -17,7 +17,7 @@ body {
 
 /*------------Header------------*/
 
-.navigation-item {
+.navigation-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -25,7 +25,7 @@ body {
   color: #212121;
 }
 
-.contacts-item {
+.contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -33,13 +33,13 @@ body {
   color: #757575;
 }
 
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: #2196f3;
 }
 
-.navigation-item:focus,
-.navigation-item:hover {
+.navigation-link:focus,
+.navigation-link:hover {
   color: #2196f3;
 }
 
@@ -53,6 +53,10 @@ body {
 }
 
 .logo-header .blue-part-logo {
+  color: #2196f3;
+}
+
+.active {
   color: #2196f3;
 }
 
@@ -72,8 +76,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
-  width: 696px;
-  height: 120px;
 }
 
 .hero-btn:hover {
@@ -88,6 +90,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
+  border: transparent;
   border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -189,14 +192,20 @@ body {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  border: transparent;
 }
 
-.btn-portfolio:active {
+.btn-portfolio:hover {
   background-color: #2196f3;
   color: #fff;
+  cursor: pointer;
 }
 
 /*--------------Footer--------------*/
+
+address {
+  font-style: normal;
+}
 
 .footer {
   background-color: #2f303a;
@@ -217,14 +226,14 @@ body {
 
 .maps {
   font-family: Roboto;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 
-.footer-contacts-item {
+.footer-contacts-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
